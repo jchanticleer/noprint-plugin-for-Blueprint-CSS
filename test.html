@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Test page for NoPrint plugin for Blueprint CSS</title>
+
+<!-- the usual statements you use to include Blueprint CSS framework, done from inside plugins folder -->
+<link rel="stylesheet" href="../../screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="../../ie.css" type="text/css" media="screen, projection"><![endif]--> 
+
+<link rel="stylesheet" href="./noprint.css" media="print" type="text/css" />
+
+</head>
+<body>
+<div class="container">
+
+	<div id="header" class="span-24 last">
+		<h1>My Sample Web Application Logo/Branding</h1>
+		<p>(we want this header to show on screen, and to show up in print)</p>
+	</div>
+
+	<hr />
+<div class="clear span-4 noprint" id="mainNav"> 
+	<div class="box">
+		<ul style="list-style-type: none;">
+			<li>Home</li>
+			<li>Option 1</li>
+			<li>Option 2</li>
+			<li>Option 3</li>
+			<li>Logout</li>
+		</ul>
+		<p>(show on screen, but not on paper)</p>
+	</div>
+	</div>
+
+	<div class="span-16" id="mainwindow">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi diam, tempus ut gravida quis, ultrices non tortor. Quisque felis turpis, ultricies at fringilla id, eleifend sit amet purus. Phasellus risus quam, dapibus ut euismod eget, convallis id augue. Phasellus vehicula dictum ornare. Cras nec nisl nisi, vitae hendrerit urna. Suspendisse ornare tristique tristique. Suspendisse congue sapien sit amet leo rutrum tincidunt. Quisque ac posuere risus. Nunc faucibus tincidunt orci vitae placerat. Nulla vulputate, arcu eget vestibulum tincidunt, purus nisi tempus nulla, sollicitudin luctus metus magna eu lectus. Duis ac nunc vitae quam vehicula pulvinar sit amet at ipsum. Vivamus at erat nibh. Aenean iaculis lacinia arcu, vitae scelerisque nibh scelerisque non. Cras facilisis posuere elit, dignissim tincidunt enim tempus eu.</p>
+	<p>Nunc et lectus enim. Vivamus ornare rutrum ligula elementum euismod. <span class="redact"><strong>This sentence should appear on screen, but not print-- leaving an obvious white gap, like it was eradicated by correction tape.</strong></span>Nam sed libero sed massa eleifend euismod. Cras id urna et sem tempor facilisis ac vel eros. Aliquam fringilla malesuada pharetra. Aenean faucibus venenatis lobortis. Vivamus ultricies sapien in odio eleifend placerat. Sed lobortis placerat est ac pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, dictum at interdum ac, tempor sed tortor.</p>
+	<p>Integer laoreet porta lectus non pellentesque. Sed sed sagittis sem. Sed quis sem urna. Sed malesuada fermentum nisl, bibendum blandit quam egestas eu. Nullam scelerisque aliquet tellus, aliquet cursus lacus fringilla vel. Sed non risus turpis. Pellentesque lorem arcu, porttitor sollicitudin laoreet et, malesuada nec nibh. Sed nec rhoncus ipsum. Donec nec odio eget est mollis gravida. Proin laoreet urna felis. Donec commodo pharetra lacus et tristique. Donec imperdiet sollicitudin lacinia. Mauris pulvinar, nunc sit amet adipiscing rhoncus, lorem orci sagittis velit, et feugiat eros urna nec erat. Nunc malesuada ornare tortor, convallis aliquet eros blandit sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer tristique sem id neque cursus eget feugiat libero imperdiet. Proin eu malesuada augue.</p>
+
+	</div>
+
+	<div class="span-4 last noprint" id="rightcol"> 
+	<div class="box" id="Widget1">
+		<p>Widget 1 (screen, not print)</p>
+	</div>
+	<div class="box" id="Widget2">
+		<p>Widget 2 (thanks to noprint)</p>
+	</div>
+	<div class="box" id="Widget3">
+		<p>Widget 3 (in parent div)</p>
+	</div>
+
+	</div>
+
+	<hr />
+
+	<div id="footer" class="clear span-24 last">
+		<p>&copy; MMX Some such and other (we want this copyright notice to show up in print)</p>
+	</div>
+</div>
+</body>
+</html>

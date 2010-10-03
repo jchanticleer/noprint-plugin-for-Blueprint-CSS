@@ -1,0 +1,10 @@
+/* -----------------------------------------------------------------------
+
+	No Print CSS, v0.1
+	plugin for Blueprint CSS framework
+
+----------------------------------------------------------------------- */
+
+/* noprint.css */
+.noprint { display: none; }
+.redact { visibility: hidden; }
