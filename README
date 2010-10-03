@@ -1,0 +1,18 @@
+No Print plugin for Blueprint CSS framework
+version 0.1
+
+* Adds two new classes, .noprint and .redact, to your media="print" toolkit.
+
+1) Create a folder inside your plugins directory called "noprint", and copy the noprint.css file from this download into it.
+
+2) To enable this plugin, add the following line to your HTML:
+
+<link rel="stylesheet" href="css/blueprint/plugins/noprint/noprint.css" type="text/css" media="print">
+
+NOTE: Your href value may be different, if you've put your Blueprint folder in an alternate location.  Please adjust your path accordingly. 
+
+3) To keep parts of your web page/application, such as headers, footers, navigation, and so on, from showing up when printed, add the class="noprint" attribute to them.  (This is just like using display:none, in that it removes the item COMPLETELY from the layout and page "flow.")
+
+3) To keep something from printing without completely removing it from the page "flow", use the class="redact" attribute instead.  (This keeps the item from printing, but leaves an obvious blank space in its place. Equivalent to visibility:hidden in CSS.)
+
+See the test.htm page for examples.
